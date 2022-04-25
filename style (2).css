@@ -1,0 +1,251 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* ===== Global ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+   text-decoration: none;
+}
+ul {
+    list-style: none; 
+}
+.active {
+    color: #fc036b;
+    text-decoration: underline;
+    font-weight: bold;
+}
+body , html {
+    overflow-x: hidden;
+}
+
+/* Navbar */ 
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+.nav-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 30px;
+}
+
+.nav-links li:hover{
+    color: #fff;
+    transition: 1s;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none; 
+    color: #fff;
+    border: 1px solid #fff; 
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+}
+
+.hero-btn:hover{
+    border: 1px solid #9000ff;
+    background: #9000ff;
+    transition: 1s;
+    color: #fff;
+}
+
+.hero-btn2{
+    display: inline-block;
+    text-decoration: none; 
+    color: #000;
+    border: 1px solid #000; 
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+}
+
+.hero-btn2:hover{
+    border: 1px solid #9000ff;
+    background: #9000ff;
+    transition: 1s;
+    color: #fff;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://mapio.net/images-p/50014051.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+} 
+.header-content {
+    font-size: 5vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: crimson;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.ctn {
+    padding: 8px 15px;
+    border-radius: 30px;
+    color: #fff;
+}
+.ctn:hover{
+    background: #fc036b;
+    transition: 0.5s;
+}
+.ctn2 {
+    padding: 8px 15px;
+    border-radius: 30px;
+    color: #000;
+}
+.ctn2:hover{
+    background: #fc036b;
+    transition: 0.5s;
+    color: #fff;
+}
+.menu-btn {
+    cursor: pointer;
+}
+
+/* Events */
+section {
+    width: 80%;
+    margin: 80px auto; 
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+}
+.title h1 {
+    color: #49497e; 
+}
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+.col img {
+    width:  160px;
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.events .row {
+    margin-top: 50px;
+}
+h4 {
+    font-size: 3vmin;
+    color: black;
+    margin: 20px auto;
+}
+p {
+    color: dimgray;
+    padding: 0px 40px;
+}
+.events .ctn {
+    margin-top: 30px;
+}
+
+.explore {
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.explore-content {
+    width: 60%;
+    padding: 50px;
+    color: darkblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.explore-content h1 {
+    font-size: 7vmin;
+    margin: 50px;
+    color: #000;
+    background-color: whitesmoke;
+}
+.explore-content .line {
+    margin-bottom: 50px;
+}
+.explore-content p {
+    color: #000;
+    background-color: powderblue;
+    align-items: justify;
+}
+
+.explore-content .ctn{
+    margin-top: 40px;
+}
+
+.tours .row .col {
+    width: 50%;
+}
+.col h1{
+    color: #000;
+}
+.events .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.image-gallery img {
+    width: 300px;
+}
+/* mobile device */
+@media only screen and (max-width:850px){
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center; 
+    }
+}
